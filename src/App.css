@@ -1,0 +1,51 @@
+.App h3 {
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.github-form {
+  padding: 30px;
+  border: 1px solid;
+  margin: auto;
+  width: 50%;
+  box-shadow: 3px 3px 0px gray;
+  text-align: center;
+}
+
+.github-form-username {
+  padding: 3px;
+  font-size: 16px;
+  margin: 10px;
+  outline: none;
+}
+
+.github-submit-btn {
+  font-size: 16px;
+  background: none;
+  outline: none;
+}
+
+.github-users-list {
+  margin: 30px;
+  border: 1px solid;
+  box-shadow: 2px 2px 0px gray;
+  text-align: center;
+}
+
+.image-holder {
+  width: 33%;
+  display: inline-block;
+}
+
+.image-holder img {
+  margin: 25px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+.image-holder h4 {
+  margin: 25px;
+}
