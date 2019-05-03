@@ -13,7 +13,10 @@ export default class Form extends Component {
   }
 
   async handleFormSubmission(event) {
+    // stop default submission so it does not refresh
     event.preventDefault();
+    
+    // call github api to get user information
     const username = this.state.inputTerm;
     const githubUser = await axios.get(`https://api.github.com/users/${username}`);
 
@@ -23,7 +26,9 @@ export default class Form extends Component {
       avatarUrl: githubUser.data.avatar_url,
     }
 
+    // update parent component's users list
     this.props.onSubmit(newUser);
+
     this.setState({
       inputTerm: ''
     });  
